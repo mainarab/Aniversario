@@ -1,0 +1,102 @@
+    /* Mobile*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Começa com a cor preta */
+        body {
+            background-color: #1f1f1f;
+        }
+
+        /* Container (section) */
+        .troca {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Imagem dos containers (section)*/
+        .troca img {
+            position: absolute;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        /* Inicioa com a segunda imagem escondida */
+        .img2 {
+            opacity: 0;
+        }
+
+        /* Troca a visibilidade das imagens */
+        .muda .img1 {
+            opacity: 0;
+        }
+        .muda .img2 {
+            opacity: 1;
+        }
+
+        /* Iniciona com a Section da vela apagada oculto */
+        #off {
+            display: none;
+        }
+
+        /* Container(section) desaparece */
+        #on.desaparece {
+            display: none;
+        }
+        #off.desaparece {
+            display: none;
+        }
+
+        /* container(section) aparece */
+        #off.aparece {
+            display: flex;
+        }
+        #on.aparece {
+            display: flex;
+        }
+
+
+        /* Posiciona o fosforo ao lado do bolo */
+        #fosforo {
+            position: absolute;
+            left: 70%;
+            bottom: 27%;
+            width: 18%;
+        }
+
+        /* Configurações do texto */
+        h1 {
+            position: absolute;
+            top: 20px;
+            font-family: "Delius Swash Caps", cursive;
+            font-size: 2rem;
+            text-align: center;
+            color: #d5d5d5;
+            padding: 20px;
+        }
+        /* Muda a cor apenas no texto onde a vela está apagada */
+        #off>h1 {
+            color: #940159;
+        }
+
+
+        /* Modo DeskTop */
+        @media(min-width: 1280px) {
+
+            .troca img {
+                width: 40%;
+            }
+
+            #fosforo {
+            left: 60%;
+            bottom: 10%;
+            width: 10%;
+        }
+        }
+
